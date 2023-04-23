@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('#imagenPortada').change(function(){
+        var archivo = this.files[0];
+        var lector = new FileReader();
+        lector.onloadend = function(){
+            $('body').css('background-image', 'url("' + lector.result + '")');
+        }
+        if(archivo){
+            lector.readAsDataURL(archivo);
+        }
+    });
+});

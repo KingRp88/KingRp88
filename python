@@ -1,0 +1,43 @@
+import os
+import pandas as pd
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
+# Supongamos que ya tienes una lista llamada "datos" con los datos de las personas registradas
+# En este ejemplo, asumimos que la lista tiene dos columnas: "nombre" y "correo electrónico"
+datos = [["Juan", "juan@example.com"], ["María", "maria@example.com"], ["Pedro", "pedro@example.com"]]
+
+# Convertimos la lista en un dataframe de Pandas
+df = pd.DataFrame(datos, columns=["nombre", "correo electrónico"])
+
+# ruta y nombre del archivo
+path = 'registros.xlsx'
+
+# guarda el DataFrame como archivo Excel en la ruta especificada
+df.to_excel(path, index=False)
+
+# autoriza la aplicación de Python a acceder a la API de Google Drive
+creds = service_account.Credentials.from_service_account_file('path/to/credentials.json')
+
+# crea una instancia del cliente de la API de Google Drive
+drive_service = build('drive', 'v3', credentials=creds)
+
+# ID de la carpeta donde se guardará el archivo
+folder_id = '16LWJvftJZY2_NssH6gQ6jmQxTrk5V0bg'
+
+# crea los metadatos del archivo que se va a cargar
+file_metadata = {
+    'name': 'registros.xlsx',
+    'parents': [folder_id]
+}
+
+# crea una instancia del objeto MediaFileUpload para cargar el archivo
+media = googleapiclient.http.MediaFileUpload(path, mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+
+# carga el archivo en la carpeta especificada
+try:
+    file = drive_service.files().create(body=file_metadata, media_body=media, fields='id').execute()
+    print('Archivo cargado en la carpeta de Google Drive con éxito: {}'.format(file.get('id')))
+except HttpError as error:
+    print('Error al cargar el archivo en Google Drive: {}'.format(error))

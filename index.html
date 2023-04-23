@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KingWorkout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #0f0f0f;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			color: #f5f5f5;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 0;
+		}
+
+		.logo {
+			flex: 1 1 100%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.logo h1 {
+			font-size: 48px;
+			font-weight: bold;
+			color: #f5f5f5;
+			margin: 0;
+			text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
+		}
+
+		.logo h2 {
+			font-size: 24px;
+			color: #f5f5f5;
+			margin: 0;
+		}
+
+		.column {
+			flex: 1 1 30%;
+			background-color: #1a1a1a;
+			margin: 10px;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+			transition: box-shadow 0.3s ease;
+		}
+
+		.column:hover {
+			box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.4);
+		}
+
+		.column h3 {
+			font-size: 24px;
+			font-weight: bold;
+			color: #f5f5f5;
+			margin-top: 0;
+			margin-bottom: 20px;
+			text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
+		}
+
+		.column p {
+			font-size: 18px;
+			line-height: 1.5;
+			color: #f5f5f5;
+			margin: 0;
+		}
+
+		.column.black {
+			background-color: #000;
+			color: #ff0;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #4d4d4d;
+			color: #f5f5f5;
+			padding: 10px 20px;
+			border-radius: 5px;
+			margin-top: 20px;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #f5f5f5;
+			color: #000;
+			cursor: pointer;
+		}
+
+		.centrar-imagen {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			filter: grayscale(20%);
+			transition: filter
+
+
+		}
+	</style>
+</head>
+		<body>
+			<div style="position: relative;">
+				<div class="centrar-imagen">
+					<img src="https://live.staticflickr.com/65535/52838581560_b445e11ea3_h.jpg" alt="" style="width: 1620px; height: 300px; ">
+					<h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ffffff; font-size: 4em;"></h1>
+				</div>
+				</div>
+		</body>
+				<div class="quick-links">
+				<a href="https://wa.me/message/CSXZZZJSW4FLE1" target="_blank"><img src="https://i.pinimg.com/736x/6c/78/49/6c784972cbf5806215d46fbda8b0c46a.jpg" width="30" height="30" alt="Whatsapp"></a>			</div>
+		</div>
+		
+		<style>
+		.quick-links {
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: fade-in 1s forwards;
+		}
+		
+		.quick-links img {
+			margin: 0 10px;
+			animation: slide-in 1s forwards;
+		}
+		
+		.quick-links p {
+			margin: 5px 0;
+			animation: slide-in 1s forwards;
+		}
+		
+		@keyframes fade-in {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		
+		@keyframes slide-in {
+			from { transform: translate(-50%, -100%); }
+			to { transform: translate(-50%, 0%); }
+		}
+		</style>
+		
+        <div class="column">
+			<h3>Entrenamiento Personalizado</h3>
+			<p>Como entrenador personal certificado, puedo afirmar con autoridad que los entrenamientos presenciales personalizados son la mejor opción para aquellos que buscan alcanzar sus metas de forma rápida y efectiva. Con un enfoque individualizado en cada alumno, puedo asegurar que cada sesión de entrenamiento se adapta específicamente a sus necesidades y objetivos, lo que resulta en un mayor progreso en un período de tiempo más corto. Con horas marcadas y atención personalizada de cada entrenador, nuestros alumnos pueden estar seguros de que su tiempo de entrenamiento se utilizará al máximo y que cada sesión de entrenamiento será efectiva y eficiente. Ya sea que busques perder peso, tonificar tu cuerpo o aumentar tu resistencia, nuestro programa de entrenamiento personalizado
+			  está diseñado para ayudarte a alcanzar tus objetivos de la manera más rápida y efectiva posible.
+			</p>
+		  </div>
+		  
+		  <div class="column">
+			<h3>Consultoria Online</h3>
+
+			<p>Si buscas la mejor opción para entrenar con un profesional, pero quieres la libertad de entrenar en cualquier horario y en el gimnasio que prefieras, entonces las consultorías online son la solución ideal para ti. Además, si eres una persona que viaja mucho y necesita seguir entrenando en cualquier lugar, incluyendo hoteles y cruceros, esta opción también es perfecta para ti. Las consultorías online son una excelente manera de aprovechar al máximo tu tiempo, ya que puedes seguir un entrenamiento programado a tu medida, con la guía de un experto en entrenamiento personalizado. Y lo mejor de todo, es que puedes realizar estas consultorías cuando lo necesites, incluso cuando nuestros horarios de entrenamiento presencial están ocupados. Así que si quieres seguir
+			  mejorando tu salud y tu condición física, ¡no esperes más y contrata una consultoría online hoy mismo!.
+			</p>
+		  </div>
+		 
+				</div>
+		<div class="column">
+			<h3>Nutricion y Dietetica Aplicada al Deporte</h3>
+            <p>Si estás buscando maximizar tu rendimiento deportivo, la nutrición es una pieza clave del rompecabezas. Y si ya tienes una buena comprensión de la nutrición básica, la nutrición y dietética aplicada al deporte puede ser la opción perfecta para llevar tu desempeño al siguiente nivel. Los programas de nutrición y dietética aplicada al deporte se enfocan en proporcionar estrategias avanzadas para mejorar el rendimiento deportivo, ya sea a través de la nutrición, 
+                la suplementación o el uso de ergogénicos. Estos programas están diseñados para atender las necesidades específicas de cada atleta y ayudarlos a lograr sus metas deportivas. Si deseas experimentar una mejora significativa en tu desempeño deportivo, la nutrición 
+                y dietética aplicada al deporte puede ser la clave para alcanzar tus objetivos más rápidamente..</p>
+            <div class="column" style="background-color: black;">
+                <h3 style="color: yellow;"animation: blink 1s infinite;>Mindset</h3>
+				
+                <p style="color: rgb(255, 255, 255);">¡Hey! Si buscas alcanzar tus metas y transformar tu vida, 
+                    es importante tener en cuenta tu mindset. La mentalidad es la clave para el éxito y puede ayudarte a superar cualquier obstáculo en el camino. Al adoptar una mentalidad positiva y enfocada en el crecimiento, puedes desarrollar la resiliencia y la motivación necesarias para lograr tus objetivos. ¡No subestimes el poder del mindset! Si deseas obtener más información sobre cómo puede ayudarte a alcanzar tus metas, ¡no dudes en contactarme!.</p>
+                
+					<div style="display: flex; justify-content: space-between; align-items: flex-end;">
+  <div style="margin-left: 80px;">
+    <div class="contenedor">
+      <form action="procesar_registro.php" method="post">
+        <label for="apellidos">Nombre y Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+        <label for="whatsapp">WhatsApp:</label><br>
+        <input type="tel" id="whatsapp" name="whatsapp" required><br><br>
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+  <div class="dropdown">
+	<button class="dropbtn">Redes Sociales</button>
+	<div class="dropdown-content">
+	  <a href="https://instagram.com/entrenadorp_rodrigopereira?igshid=OGRjNzg3M2Y=" target="_blank"><img src="https://i.pinimg.com/474x/ec/b9/a7/ecb9a70886a44154154a6b7a8ef6ca06.jpg" width="30" height="30"></a>
+	  <a href="https://instagram.com/kingworkoutt_?igshid=YmMyMTA2M2Y=" target="_blank"><img src="https://i.pinimg.com/474x/ec/b9/a7/ecb9a70886a44154154a6b7a8ef6ca06.jpg" width="30" height="30" alt="Instagram de la empresa"></a>
+	  <a href="https://www.facebook.com/profile.php?id=100037540993798" target="_blank"><img src="https://i.pinimg.com/236x/26/a2/85/26a2857a33ac96048936429b907be8ba.jpg" width="30" height="30" alt="Whatsapp"></a>
+	</div>
+  </div>
+  
+  <div class="contenedor" style="margin-left: 10px; max-width: 600px;">
+    <h3 style="display: inline-block;">Registrarme</h3>
+    <p>Registrarse es un paso muy importante para nosotros, ya que nos permite enviarles información valiosa sobre nuestras actividades, servicios y eventos. Además, como miembros registrados, tendrán acceso a ofertas y descuentos exclusivos que les ayudarán a obtener más beneficios de nuestra colaboración. Les aseguramos que valoramos profundamente su confianza y estamos comprometidos a proporcionarles contenido de alta calidad y una experiencia excepcional. ¡Gracias por formar parte de nuestra comunidad!</p>
+  </div>
+</div>
+
+<style>
+  .contenedor {
+    background-color: #232323;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="submit"] {
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    width: 95%;
+    background-color: #424242;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: yellow;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #10ac84;
+  }
+</style>
